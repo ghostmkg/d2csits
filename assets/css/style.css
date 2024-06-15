@@ -1,0 +1,32 @@
+/* Nav Bar */
+#neubar {
+    background: #28A4EB ;
+    box-shadow: 4px 6px 10px rgba(0,0,0,0.4)
+  }
+  
+  .nav-item .active {
+    border-radius: 15px;
+    background: linear-gradient(145deg, #de6767, #de536f);
+    
+  }
+  #neubar .nav-item {
+    margin : auto 4px;
+  }
+  #neubar a {
+  
+    padding-left:11px;
+    padding-right:11px;
+  }
+  #neubar .dropdown-menu {
+    background : #545454
+  }
+  a.navbar-brand {
+    color: #454545
+  }
+
+/* Footer */
+
+.footer {
+    padding: 12em 0;
+    background: #869298 ;
+}

@@ -141,7 +141,7 @@ a{
 }
 .footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #1ed33c;
+  color: #88d1e4;
   font-size: 18px;
   line-height: 1;
 }
@@ -176,14 +176,14 @@ a{
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
-  border-radius: 4px;
+  border-radius: 50%;
   text-align: center;
   width: 36px;
   height: 36px;
   transition: 0.3s;
 }
 .footer .social-links a:hover {
-  background: #1bbd36;
+  background: #2e95af;
   color: #fff;
   text-decoration: none;
 }

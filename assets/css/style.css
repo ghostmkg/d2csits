@@ -1,3 +1,10 @@
+:root {
+  --primary: #009CFF;
+  --secondary: #777777;
+  --light: #F8F8F8;
+  --dark: #252525;
+}
+
 a{
     text-decoration: none;
 }
@@ -41,7 +48,7 @@ a{
   color: #fff;
   font-size: 14px;
   background: #111;
-  margin-top: 600px;
+  margin-top: 75px;
 }
 .footer .subscribe {
     margin-top: -25px; 
@@ -91,7 +98,7 @@ a{
   width: 150px;
   height: 56px;
   font-size: 14px;
-  background: #88d1e4 !important;
+  background: #009CFF !important;
   border: none;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -252,11 +259,6 @@ a{
 /* Contact Us CSS */
 
 
-.contat-us h2{
-  font-size: 70px;
-  padding-top: 50px;
-}
-
 .address-card{
   margin: 30px;
 }
@@ -281,7 +283,7 @@ a{
   box-shadow: 0 2px 2px #e5c0c0;
   padding: 0px;
   text-align: center;
-  color: #f06868;
+  color: #009CFF;
   font-size: 35px;
   line-height: 2em;
   border-radius: 50%;
@@ -369,7 +371,7 @@ a{
   outline: none;
   border-radius: 40px;
   text-align: center;
-  background: #f06868;
+  background: #009CFF;
   box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
   position: relative;
   overflow: hidden;
@@ -382,7 +384,7 @@ a{
 }
 
 .form-submit button:hover{
-  border: 2px solid #f06868;
+  border: 2px solid #009CFF;
   background: transparent;
   color: black;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -392,56 +394,201 @@ a{
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
-.breadcrumbs {
-  padding: 15px 0;
-  min-height: 40px;
-  margin-top: 72px;
-  background-color: #e7edee;
-  height: 250px;
-  text-align: center;
+.page-header {
+  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../image/bg-img2.jpg) center center no-repeat;
+  background-size: cover;
 }
 
-.breadcrumbs ol {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  color: #000000;
+.breadcrumb-item+.breadcrumb-item::before {
+  color: var(--secondary);
 }
 
-.breadcrumbs ol a {
-  color: #000000;
-  text-decoration: none;
-  font-size: 20px;
+.page-header .breadcrumb-item+.breadcrumb-item::before {
+  color: var(--light);
 }
 
-.breadcrumbs ol li+li {
-  padding-left: 10px;
+
+.img-border {
+  position: relative;
+  height: 100%;
+  min-height: 400px;
 }
 
-.breadcrumbs ol li+li::before {
+.img-border::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 3rem;
+  bottom: 3rem;
+  border: 5px solid var(--primary);
+  border-radius: 6px;
+}
+
+.img-border img {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  width: calc(100% - 3rem);
+  height: calc(100% - 3rem);
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.progress {
+  height: 5px;
+}
+
+.progress .progress-bar {
+  width: 0px;
+  transition: 3s;
+}
+
+.container-xxl .section-title {
+  position: relative;
   display: inline-block;
-  padding-right: 10px;
-  color: #000000;
-  content: "/";
+  text-transform: uppercase;
 }
 
-@media (max-width: 991px) {
-  .breadcrumbs {
-    margin-top: 58px;
-  }
+.container-xxl .section-title::before {
+  position: absolute;
+  content: "";
+  width: calc(100% + 80px);
+  height: 2px;
+  top: 4px;
+  left: -40px;
+  background: var(--primary);
+  z-index: -1;
+}
 
-  .breadcrumbs .d-flex {
-    display: block !important;
-  }
+.container-xxl .section-title::after {
+  position: absolute;
+  content: "";
+  width: calc(100% + 120px);
+  height: 2px;
+  bottom: 4px;
+  left: -60px;
+  background: var(--primary);
+  z-index: -1;
+}
 
-  .breadcrumbs ol {
-    display: block;
-  }
+.container-xxl .section-title.text-start::before {
+  width: calc(100% + 40px);
+  left: 0;
+}
 
-  .breadcrumbs ol li {
-    display: inline-block;
-  }
+.container-xxl .section-title.text-start::after {
+  width: calc(100% + 60px);
+  left: 0;
+}
+
+
+/*--------------------------------------------------------------
+# Our Team
+--------------------------------------------------------------*/
+/*** Team ***/
+.team-item {
+  box-shadow: 0 0 45px rgba(0, 0, 0, .07);
+}
+
+.team-item .team-text {
+  position: relative;
+  height: 65px;
+  overflow: hidden;
+}
+
+.team-item .team-title {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: .5s;
+}
+
+.team-item:hover .team-title {
+  top: -65px;
+}
+
+.team-item .team-social {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 65px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFFFFF;
+  transition: .5s;
+}
+
+.team-item .team-social .btn {
+  margin: 0 3px;
+}
+
+.team-item:hover .team-social {
+  top: 0;
+}
+
+/*** Facts ***/
+.fact-item {
+  transition: .5s;
+}
+
+.fact-item:hover {
+  margin-top: -10px;
+  background: #FFFFFF !important;
+  box-shadow: 0 0 45px rgba(0, 0, 0, .07);
+}
+
+/*--------------------------------------------------------------
+# Clients
+--------------------------------------------------------------*/
+
+.clients .container{
+  height: 350px;
+  border: 1px ;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.clients .section-title{
+  padding-top: 30px;
+  text-align: center;
+  padding-bottom: 30px;
+  
+}
+.clients .container h2{
+  color: #009CFF;
+}
+.clients .clients-wrap {
+  border-top: 1px solid #ececec;
+  border-left: 1px solid #ececec;
+}
+
+.clients .client-logo {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+  overflow: hidden;
+  background: #fff;
+  height: 100px;
+}
+
+.clients .client-logo img {
+  transition: all 0.3s ease-in-out;
+  height: 36px;
+  filter: grayscale(100%);
+}
+
+.clients .client-logo:hover img {
+  filter: none;
+  transform: scale(1.1);
 }
 

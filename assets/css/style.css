@@ -11,6 +11,23 @@ a{
 
 
 /*--------------------------------------------------------------
+# Spinner
+--------------------------------------------------------------*/
+#spinner {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .5s ease-out, visibility 0s linear .5s;
+  z-index: 99999;
+}
+
+#spinner.show {
+  transition: opacity .5s ease-out, visibility 0s linear 0s;
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/*--------------------------------------------------------------
 # Nav Bar
 --------------------------------------------------------------*/
 #neubar {
@@ -642,3 +659,68 @@ a{
   text-decoration: none;
 }
 
+/*--------------------------------------------------------------
+# Testimonial Page
+--------------------------------------------------------------*/
+
+.testimonial-carousel .owl-item .testimonial-item img {
+  width: 60px;
+  height: 60px;
+}
+
+.testimonial-carousel .owl-item .testimonial-item,
+.testimonial-carousel .owl-item .testimonial-item * {
+  transition: .5s;
+}
+
+.testimonial-carousel .owl-item.center .testimonial-item {
+  background: var(--primary) !important;
+}
+
+.testimonial-carousel .owl-item.center .testimonial-item * {
+  color: #FFFFFF !important;
+}
+
+.testimonial-carousel .owl-nav {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial-carousel .owl-nav .owl-prev,
+.testimonial-carousel .owl-nav .owl-next {
+  margin: 0 12px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #DEE2E6;
+  border-radius: 50px;
+  font-size: 18px;
+  transition: .5s;
+}
+
+.testimonial-carousel .owl-nav .owl-prev:hover,
+.testimonial-carousel .owl-nav .owl-next:hover {
+  color: #FFFFFF;
+  border-color: var(--primary);
+  background: var(--primary);
+}
+
+/*** Features ***/
+.feature {
+  background: linear-gradient(rgba(3, 27, 78, .3), rgba(3, 27, 78, .3)), url(../image/feature.jpg) left center no-repeat;
+  background-size: cover;
+}
+
+.feature-row {
+  box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+}
+
+.feature-item {
+  border-color: rgba(0, 0, 0, .03) !important;
+}
+.feature .bgColors{
+  background-color: #e2e5e6
+}

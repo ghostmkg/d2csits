@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Vendor CSS Files -->
+    <link rel="stylesheet" href="assets/vendor/animate/animate.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    
+    <!-- Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <title>Contact Us</title>
+</head>
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+    class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+  </div>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light" id="neubar">
+            <div class="container">
+              <a class="navbar-brand" href="index.html"><img src="/assets/image/logo.png" height="60" /></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          
+              <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto ">
+                  <li class="nav-item">
+                    <a class="nav-link mx-2" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mx-2" href="services.html">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mx-2" href="#">Academic</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mx-2" href="#">Community</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mx-2" href="aboutus.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mx-2 active" aria-current="page" href="contactus.html">Contact US</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+      <div class="container text-center py-5">
+          <h1 class="display-4 text-white animated slideInDown mb-3">Contact Us</h1>
+          <nav aria-label="breadcrumb animated slideInDown">
+              <ol class="breadcrumb justify-content-center mb-0">
+                  <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
+                  <li class="breadcrumb-item text-primary active" aria-current="page">Contact Us</li>
+              </ol>
+          </nav>
+      </div>
+    </div><!-- End Breadcrumbs -->
+
+    <div class="more-info business-card">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-sm-6 contact-card wow fadeIn" data-wow-delay="0.1s">
+            <div class="info-item">
+              <i class="fa fa-phone"></i>
+              <h4>Make a Phone Call</h4>
+              <a href="#">+91 7320898566</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 contact-card wow fadeIn" data-wow-delay="0.1s">
+            <div class="info-item">
+              <i class="fa fa-envelope"></i>
+              <h4>Contact Us via Email</h4>
+              <a href="mailto:support@d2csits.com">support@d2csits.com</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-12 contact-card wow fadeIn" data-wow-delay="0.1s">
+            <div class="info-item">
+              <i class="fa fa-map-marker"></i>
+              <h4>Visit Our Offices</h4>
+              <a href="#">Mathiya Near Sadhu Chowk Gopalganj (841428)</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="form-content">
+      <div class="container wow fadeIn" data-wow-delay="0.3s">
+        <div class="justify-content-center business-heading">
+            <h2 class="contactus-title">Take your business to next level.</h2>
+            <h4 class="contactus-subtitle">Get in touch today.</h4>
+        </div>
+      </div>
+      <div class="contact-form">
+        
+        <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-lg-12 col-sm-12 col-md-12 form-box wow fadeIn" data-wow-delay="0.5s">
+                  <form class="row g-3">
+                      <div class="col-md-6">
+                        <label for="firstname" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="firstname" placeholder="Your First Name" required>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="lastname" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="lastname" placeholder="Your Last Nmae" required>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="abcd@abc.com" required>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" class="form-control" id="subject" placeholder="Write your Contact Subject" required>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="text" class="form-control" id="phone" placeholder="+91 1234567890" required>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="phone" class="form-label">Mode of Contact</label><br>
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked required>
+                        <label class="form-check-label" for="gridRadios1">
+                          Phone Call
+                        </label>
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked required>
+                        <label class="form-check-label" for="gridRadios1">
+                          Email
+                        </label>
+                      </div>
+                      <div class="col-12">
+                        <label for="message" class="form-label">Your Message</label>
+                        <textarea name="message" id="message" class="form1-control" rows="10"></textarea>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                          <label class="form-check-label" for="gridCheck">
+                            Accept the policy
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-12 form-submit">
+                        <button type="submit" class="btn btn-primary ">Submit</button>
+                      </div>
+                    </form>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-10 col-lg-6">
+                  <div class="subscribe mb-5">
+                      <form action="#" class="subscribe-form">
+                          <div class="form-group d-flex">
+                              <input type="text" class="form-control rounded-left" placeholder="Enter email address">
+                              <input type="submit" value="Subscribe" class="form-control submit px-3">
+                          </div>           
+                      </form>
+                  </div>
+              </div>
+          </div>
+          <div class="footer-top">
+            <div class="container">
+              <div class="row">
+      
+                <div class="col-lg-3 col-md-6 col-sm-6 footer-contact">
+                  <h3>D2CSITS</h3>
+                  <p>
+                    Mathiya Near Sadhu Chowk <br>
+                    Gopalganj, Bihar (841428)<br>
+                    India <br><br>
+                    <strong>Phone:</strong> +91 732 089 8566<br>
+                    <strong>Email:</strong> info@d2csits.com<br>
+                  </p>
+                </div>
+      
+                <div class="col-lg-3 col-md-6 col-sm-6 footer-links">
+                  <h4>Useful Links</h4>
+                  <ul>
+                    <li><i class="fa-solid fa-angles-right"></i> <a href="index.html">Home</a></li>
+                    <li><i class="fa-solid fa-angles-right"></i><a href="aboutus.html">About us</a></li>
+                    <li><i class="fa-solid fa-angles-right"></i><a href="services.html">Services</a></li>
+                    <li><i class="fa-solid fa-angles-right"></i><a href="contactus.html">Contact Us</a></li>
+                    <li><i class="fa-solid fa-angles-right"></i><a href="#">Terms of service</a></li>
+                    <li><i class="fa-solid fa-angles-right"></i><a href="#">Privacy policy</a></li>
+                  </ul>
+                </div>
+      
+                <div class="col-lg-3 col-md-6 col-sm-6 footer-links">
+                  <h4>Our Services</h4>
+                  <ul>
+                    <li><i class="fa-solid fa-angles-right"></i><a href="#">Web Development</a></li>
+                    <li><i class="fa-solid fa-angles-right"></i><a href="#">WordPress Development </a></li>
+                    <li><i class="fa-solid fa-angles-right"></i><a href="#">Penetration Testing</a></li>
+                    <li><i class="fa-solid fa-angles-right"></i><a href="#">Android Development</a></li>
+                    <li><i class="fa-solid fa-angles-right"></i><a href="#">Graphic Design</a></li>
+                  </ul>
+                </div>
+      
+                <div class="col-lg-3 col-md-6 col-sm-6 footer-links">
+                  <h4>Academy</h4>
+                  <ul>
+                    <li><i class="fa-solid fa-angles-right"></i><a href="#">Cyber Security</a></li>
+                    <li><i class="fa-solid fa-angles-right"></i><a href="#">Web Development</a></li>
+                    <li><i class="fa-solid fa-angles-right"></i><a href="#">Certification Course</a></li>
+                    <li><i class="fa-solid fa-angles-right"></i><a href="#">Short-term Course</a></li>
+                    <li><i class="fa-solid fa-angles-right"></i><a href="#">Android Development</a></li>
+                  </ul>
+                </div>
+      
+              </div>
+            </div>
+          </div>
+      
+          <div class="container d-md-flex py-4">
+      
+            <div class="me-md-auto text-center text-md-start">
+              <div class="copyright">
+                &copy; Copyright <strong><script>document.write(new Date().getFullYear());</script> <span> Company</span></strong>. All Rights Reserved
+              </div>
+              <div class="credits">
+                Designed by <a href="#">D2CSITS</a>
+              </div>
+            </div>
+            <div class="social-links text-center text-md-right pt-3 pt-md-0">
+              <a href="http://"><i class="fa-brands fa-facebook"></i></a>
+              <a href="http://"><i class="fa-brands fa-instagram"></i></a>
+              <a href="http://"><i class="fa-brands fa-youtube"></i></a>
+              <a href="http://"><i class="fa-brands fa-twitter"></i></a>
+              <a href="http://"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+    </footer><!-- End Footer -->
+    <script src="https://kit.fontawesome.com/5b1c4fd3ad.js" crossorigin="anonymous"></script> 
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/wow/wow.min.js"></script>
+    <script src="assets/vendor/waypoints/waypoints.min.js"></script>
+    <script src="assets/vendor/counterup/counterup.min.js"></script>
+    <script src="assets/vendor/owlcarousel/owl.carousel.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    
+</body>
+</html>

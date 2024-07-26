@@ -1129,17 +1129,20 @@ Reservation Page Style
   border-radius: 25px;
 }
 
-.blue:hover{
+
+
+.services .iconbox-blue:hover button {
   background: #47aeff;
   border-color: #47aeff;
 }
 
-.orange:hover{
+.services .iconbox-orange:hover button {
   background: #ffa76e;
   border-color: #ffa76e;
 }
 
-.pink:hover{
+
+.services .iconbox-pink:hover button {
   background: #e80368;
   border-color: #e80368;
 }

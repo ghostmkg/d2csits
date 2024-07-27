@@ -3,6 +3,15 @@
   --secondary: #777777;
   --light: #F8F8F8;
   --dark: #252525;
+  --bs-primary-bg-subtle: #E2F3F0;
+  --primary-color: #4CC082;
+  --light-color: #FFFFFF;
+  --bs-tertiary: #f8be60;
+  --bs-tertiary-bg-subtle: #FFEED3;
+  --bs-secondary: #EC6C5A;
+  --bs-secondary-bg-subtle: #FFE9E5;
+  --secondary-color: #EC6C5A;
+  --bs-primary: #4CC082;
 }
 
 a{
@@ -1382,5 +1391,63 @@ border-color: transparent #dddddd transparent transparent;
       border-right: none;
       border-left: 5px solid #dddddd;
   }
+}
+
+/*----- catergory Section Style -------------------------*/
+.category-paragraph {
+  transition: all 0.3s ease-in;
+}
+.viewallbtn{
+  border-radius: 35px;
+}
+
+.primary {
+  background: var(--bs-primary-bg-subtle);
+  transition: all 0.3s ease-in;
+}
+
+.primary:hover {
+  background: var(--bs-primary);
+}
+
+.secondary {
+  background: var(--bs-secondary-bg-subtle);
+  transition: all 0.3s ease-in;
+}
+
+
+.secondary:hover {
+  background: var(--bs-secondary);
+}
+
+.tertiary {
+  background: var(--bs-tertiary-bg-subtle);
+  transition: all 0.3s ease-in;
+}
+
+.tertiary:hover {
+  background: var(--bs-tertiary);
+}
+
+.gray {
+  background: #e0e5eb;
+  transition: all 0.3s ease-in;
+}
+
+
+.gray:hover {
+  background: var(--bs-gray);
+}
+/*----- courses Section Style -------------------------*/
+h5.course-title {
+  transition: all 0.3s ease-in;
+}
+
+h5.course-title:hover {
+  color: var(--primary-color);
+}
+.padding-medium {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 

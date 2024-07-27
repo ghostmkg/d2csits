@@ -1451,3 +1451,17 @@ h5.course-title:hover {
   padding-bottom: 4rem;
 }
 
+
+.project .nav .nav-link {
+  border-radius: 30px;
+  background: var(--light);
+  transition: .5s;
+}
+
+.project .nav .nav-link.active {
+  background: var(--primary);
+}
+
+.project .nav .nav-link.active h3 {
+  color: #FFFFFF !important;
+}
